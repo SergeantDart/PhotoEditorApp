@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="4_1080_DUMITRASCU_ANTONIO_SEBASTIAN.css">
+
+</head>
+
+<body>
+
+	<br><br>
+	<div id="inputGroup">
+		<label for="input" id="inputLabel">
+			Upload your image
+		</label>
+		<input type="file" id="input">
+	</div>
+	
+	<p id="dimensionsInfo"></p>
+	<br><br>
+	<div id="controlsGroup">
+		<button type="button" id="showOriginalImageButton">Show original image</button><br><br><br><br>
+		<button type="button" id="selectWholeImageButton">Select whole image</button><br><br><br>
+		<button type="button" id="cropButton">Crop</button><br><br><br>
+		<form id="effectsForm">
+		<label for="effectsSelection">Apply an effect:</label><br>
+		<select name="effectsSelection" id="effectsSelection">
+			<option disabled selected value> -- select an option -- </option>
+			<option value="blurred">Blurred</option>
+			<option value="sepia">Sepia</option>
+			<option value="black-and-white">Black and white</option>
+		</select>
+		</form>
+		<br><br>
+		<form id="resizeForm">
+			<label for="newDimensionTextBox">New dimension:</label><br>
+			<input type="number" id="newDimensionTextBox"><br>
+			<input type="radio" id="width" name="dimensionTypeRadio" value="width" checked="checked"> Width </input>      
+			<input type="radio" id="height" name="dimensionTypeRadio" value="height"> Height </input><br>
+			<button type="button" id="resizeImageButton"> Resize image </button>
+		</form>
+		<br><br>
+		<form id="writeTextForm">
+			<label for="imageTextTextBox">Type text on the image: </label><br>
+			<input type="text" id="imageTextTextBox"><br>
+			<label for="xCoordinateTextBox">X: </label>
+			<input type="number" id="xCoordinateTextBox">
+			<label for="yCoordinateTextBox">Y: </label>
+			<input type="number" id="yCoordinateTextBox"><br>
+			<label for="fontSizeTextBox">Font size: </label>
+			<input type="number" id="fontSizeTextBox"><br>
+			<label for="brushColorInput">Color: </label>
+	        <input type="color" value="#FF00FF" id="brushColorInput">
+			<button type="button" id="addTextToImageButton"> Add text </button>
+		</form>
+		<br><br>
+		<form id="saveForm">
+			<label for="imageNameTextBox">Image name: </label><br>
+			<input type="text" id="imageNameTextBox"><br>
+			<button type="button" id="downloadButton">Download image</button>
+		</form>
+	</div>
+	
+	<canvas id="canvas" width="600" height="600"></canvas>
+	
+	<div id="histogram">
+		<canvas id="histogramCanvas" width="256" height="300"></canvas><br>
+		<label for="histogramCanvas" id ="histogramCanvasLabel">RGB color histograms</label>
+
+	</div>
+	<canvas id="selectedImageCanvas" width="0" height="0"></canvas>
+	<canvas id="appliedEffectsCanvas"width="0" height="0"></canvas>
+	<canvas id="textAppliedCanvas" width="0" height="0"></canvas>
+	<canvas id="finalImageCanvas" width="0" height="0"></canvas>
+
+
+	<br><br>
+	
+    <script type="text/javascript" src="4_1080_DUMITRASCU_ANTONIO_SEBASTIAN.js"></script>
+
+
+
+</body>
+
+</html>

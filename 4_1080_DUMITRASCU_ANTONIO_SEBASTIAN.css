@@ -1,0 +1,184 @@
+body {
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+#canvas {
+	background-color: #C0C0C0;
+	float: left;
+}
+
+#histogramCanvas {
+	background-color: #C0C0C0;
+	float:left;
+	margin-left:80px;
+
+}
+
+#selectedImageCanvas {
+	background-color: #C0C0C0;
+	visibility: hidden;
+
+}
+
+#appliedEffectsCanvas {
+	background-color: #C0C0C0;
+	visibility: hidden;
+}
+
+#effectsForm {
+	font-size: 25px;
+	border : 1px solid red;
+	background-color: #D1DC6D;
+}
+
+#resizeForm {
+    font-size: 25px;
+	width: 300px;
+	text-align: center;
+	border : 1px solid red;
+	background-color: #D1DC6D;
+
+}
+
+#writeTextForm{
+	font-size: 25px;
+	width: 300px;
+	text-align: center;
+	border : 1px solid red;
+	background-color: #D1DC6D;
+}
+
+#saveForm{
+	font-size: 25px;
+	width: 300px;
+	text-align: center;
+	border : 1px solid red;
+	background-color: #D1DC6D;
+}
+
+#controlsGroup {
+	float: left;
+	text-align: center;
+	clear: right;
+	margin-left:100px;
+	margin-right:100px;
+}
+
+#histogram{
+	float: left;
+	text-align: center;
+	clear: right;
+	margin-left:100px;
+	margin-right:100px;
+}
+
+#inputGroup {
+	font-size: 25px;
+	background-color: #D1DC6D;
+}
+
+
+#showOriginalImageButton {
+	border : 1px solid red;
+    font-size: 25px;
+	float:left;
+	width: 300px;
+	background-color: #C75B5B;
+}
+
+#selectWholeImageButton{
+	border : 1px solid red;
+    font-size: 25px;
+	width: 300px;
+	background-color: #C75B5B;
+
+}
+
+#cropButton{
+	border : 1px solid red;
+    font-size: 25px;
+	width: 300px;
+	background-color: #C75B5B;
+}
+
+#addTextToImageButton{
+	border : 1px solid red;
+    font-size: 25px;
+	width: 300px;
+	background-color: #C75B5B;
+}
+
+#resizeImageButton{
+	border : 1px solid red;
+    font-size: 25px;
+	width: 300px;
+	background-color: #C75B5B;
+
+}
+
+#downloadButton{
+	border : 1px solid red;
+    font-size: 25px;
+	width: 300px;
+	background-color: #C75B5B;
+}
+
+#effectsSelection{
+	font-size: 25px;
+	background-color: #C75B5B;
+}
+
+#newDimensionTextBox{
+	font-size: 20px;
+}
+
+#input{
+	font-size: 20px;
+	border : 1px solid red;
+	background-color: #C75B5B;
+
+}
+
+#fileNameTextBox{
+	font-size: 20px;
+	border : 1px solid red;
+}
+
+#xCoordinateTextBox{
+	width: 55px;
+	font-size: 20px;
+
+}
+
+#yCoordinateTextBox{
+	width: 55px;
+	font-size: 20px;
+}
+
+#fontSizeTextBox{
+	width:55px;
+	font-size: 20px;
+}
+
+#imageNameTextBox{
+	font-size: 20px;
+}
+
+#imageTextTextBox{
+	font-size: 20px;
+}
+
+#dimensionsInfo{
+    font-size: 25px;
+	border : 1px solid red;
+	background-color: #C75B5B;
+}
+
+#histogramCanvasLabel{
+	font-size: 25px;
+	margin-left:100px;
+
+}
